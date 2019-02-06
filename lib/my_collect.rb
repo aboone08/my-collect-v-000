@@ -6,10 +6,10 @@ def my_collect(array)
   end
 
 end
-    if my_collect(array) do |name|
+    if my_collect([]) do |name|
       return name.split(" ").first
       end
-    else my_collect(array) do |lang|
+    else my_collect[]) do |lang|
       return lang.upcase
       end
 end
