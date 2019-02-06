@@ -5,10 +5,10 @@ def my_collect(array)
     yield (array[i])
     i=i+1
     if my_collect(array) do |name|
-      name.split(" ").first
+      return name.split(" ").first
       end
     else my_collect(array) do |lang|
-      lang.upcase
+      return lang.upcase
       end
   end
   array
