@@ -11,5 +11,5 @@ def my_collect(array)
     my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
       if lang.upcase
       end
-  end
 end
+
