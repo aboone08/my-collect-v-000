@@ -6,10 +6,10 @@ def my_collect(array)
   end
 
 end
-    if my_collect([]) do |name|
+    if my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
       return name.split(" ").first
       end
-    else my_collect[]) do |lang|
+    else my_collect['ruby', 'javascript', 'python', 'objective-c']) do |lang|
       return lang.upcase
       end
 end
