@@ -4,7 +4,7 @@ def my_collect(array)
     yield (array[i])
     i=i+1
   end
-    array
+    
     my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
       return name.split(" ").first
       end
