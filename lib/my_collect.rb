@@ -7,7 +7,7 @@ def my_collect(array)
     array
   end
 
-my_collect(["Tim Jones", "Tom Smith", "Jim Campagno") do |name|
+my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
   if name.split(" ").first
   end
 my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
