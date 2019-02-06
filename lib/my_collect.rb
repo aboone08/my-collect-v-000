@@ -1,15 +1,9 @@
-array = [" "]
-def my_collect(array)
-    i=0
-  while i<array.length
-    yield (array[i])
+def my_collect(collection)
+  i=0
+  modified_collection = []
+  while i<collection.length
+    modified_collection<<yield (array[i])
     i=i+1
-    if my_collect(array) do |name|
-      return name.split(" ").first
-      end
-    else my_collect(array) do |lang|
-      return lang.upcase
-      end
   end
-  array
+  modified_collection
 end
