@@ -5,10 +5,10 @@ def my_collect(array)
     i=i+1
   end
     array
-    my_collect(array) do |name|
+    if my_collect(array) do |name|
       return name.split(" ").first
       end
-    my_collect(array) do |lang|
+    if my_collect(array) do |lang|
       return lang.upcase
       end
 end
