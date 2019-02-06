@@ -1,3 +1,4 @@
+array = [" "]
 def my_collect(array)
     i=0
   while i<array.length
@@ -6,10 +7,10 @@ def my_collect(array)
   end
 
 end
-    if my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
+    if my_collect(array) do |name|
       return name.split(" ").first
       end
-    else my_collect['ruby', 'javascript', 'python', 'objective-c']) do |lang|
+    else my_collect(array)) do |lang|
       return lang.upcase
       end
 end
