@@ -12,4 +12,3 @@ def my_collect(array)
       if lang.upcase
       end
 end
-
