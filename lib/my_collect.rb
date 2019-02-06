@@ -4,11 +4,10 @@ def my_collect(array)
     yield (array[i])
     i=i+1
   end
-  
+
     if my_collect(array) do |name|
       return name.split(" ").first
       end
     if my_collect(array) do |lang|
       return lang.upcase
       end
-
