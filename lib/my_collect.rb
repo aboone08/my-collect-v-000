@@ -5,7 +5,7 @@ def my_collect(array)
     i=i+1
   end
     array
-  end
+
 
 my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
   if name.split(" ").first
