@@ -5,10 +5,10 @@ def my_collect(array)
     i=i+1
   end
     array
-  end
     my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
       return name.split(" ").first
       end
     my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
       return lang.upcase
       end
+end
