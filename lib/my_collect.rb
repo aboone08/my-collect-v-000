@@ -10,7 +10,7 @@ end
     if my_collect(array) do |name|
       return name.split(" ").first
       end
-    else my_collect(array)) do |lang|
+    else my_collect(array) do |lang|
       return lang.upcase
       end
 end
