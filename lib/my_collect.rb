@@ -6,9 +6,9 @@ def my_collect(array)
   end
     array
     my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) do |name|
-      if name.split(" ").first
+      return name.split(" ").first
       end
     my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
-      if lang.upcase
+      return lang.upcase
       end
 end
