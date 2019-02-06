@@ -1,5 +1,4 @@
 def my_collect(array)
-  if block_given?
     i=0
   while i<array.length
     yield (array[i])
@@ -7,10 +6,3 @@ def my_collect(array)
   end
     array
   end
-  return my_collect(array) do |lang|
-    lang.upcase
-  end
-  return my_collect(array) do |name|
-    name.split(" ").first
-  end
-end
