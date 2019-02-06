@@ -7,10 +7,10 @@ def my_collect(array)
   end
     array
   end
-  return my_collect() do |lang|
+  return my_collect(array) do |lang|
     lang.upcase
   end
-  return my_collect() do |name|
+  return my_collect(array) do |name|
     name.split(" ").first
   end
 end
