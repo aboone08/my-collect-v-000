@@ -11,3 +11,4 @@ def my_collect(array)
     else my_collect(array) do |lang|
       return lang.upcase
       end
+end
